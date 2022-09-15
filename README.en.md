@@ -1,37 +1,31 @@
 # vite-vue-electron
 
-#### Description
-vite3+vue3+electron-v20
-桌面应用项目模板
+#### 介绍
 
-#### Software Architecture
-Software architecture description
+基于 vite+vue+electron 创建的桌面应用项目模板
 
-#### Installation
+#### 软件架构
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+TS
+vite：3.1
+vue：3.2
+electron：20.1
 
-#### Instructions
+#### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  pnpm i
 
-#### Contribution
+#### 使用说明
 
-1.  Fork the repository
-2.  Create Feat_xxx branch
-3.  Commit your code
-4.  Create Pull Request
+1.  pnpm dev(dev 环境启动项目)
+2.  pnpm vite:dev(单独运行 vite 项目)
+3.  pnpm elec:dev(单独运行 electron 项目)
+4.  pnpm build:hot(热更新预构建 vite 项目)
+5.  pnpm build(构建 vite 项目)
 
+#### 参与贡献
 
-#### Gitee Feature
-
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+1.  Fork 本仓库
+2.  新建 Feat_xxx 分支
+3.  提交代码
+4.  新建 Pull Request

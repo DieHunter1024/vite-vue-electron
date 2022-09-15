@@ -6,7 +6,6 @@
   "main": "main.js",
   "scripts": {
     "dev": "start cmd /k pnpm vite:dev && pnpm elec:dev",
-    "dev:build": "start cmd /k pnpm build:hot && pnpm elec:dev",
     "vite:dev": "vite",
     "elec:dev": "electron .",
     "build:hot": "vue-tsc --noEmit && vite build --watch",
