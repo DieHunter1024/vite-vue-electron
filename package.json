@@ -5,22 +5,13 @@
   "type": "commonjs",
   "main": "main.js",
   "scripts": {
-    "dev": "start cmd /k pnpm vite:dev && pnpm elec:dev",
-    "vite:dev": "vite",
+    "start": "start cmd /k pnpm vite:dev && pnpm elec:dev",
     "elec:dev": "electron .",
+    "vite:dev": "pnpm -r vite:dev",
     "build:hot": "vue-tsc --noEmit && vite build --watch",
-    "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "vue": "^3.2.37"
+    "build": "vue-tsc --noEmit && vite build"
   },
   "devDependencies": {
-    "@types/node": "^18.7.17",
-    "@vitejs/plugin-vue": "^3.1.0",
-    "electron": "^20.1.3",
-    "typescript": "^4.6.4",
-    "vite": "^3.1.0",
-    "vue-tsc": "^0.40.4"
+    "electron": "^20.1.3"
   }
 }

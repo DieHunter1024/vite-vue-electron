@@ -1,5 +1,6 @@
 // 控制应用生命周期和创建原生浏览器窗口的模组
 const { app, BrowserWindow } = require("electron");
+
 const path = require("path");
 // require('electron-reload')(path.join(__dirname, "/dist/"), {
 //   electron: require(`${__dirname}/node_modules/electron`)
@@ -14,7 +15,7 @@ function createWindow() {
     },
   });
   // mainWindow.loadFile("dist/index.html");
-  mainWindow.loadURL("http://127.0.0.1:5173/")
+  mainWindow.loadURL(`${"http://127.0.0.1"}:${2048}/`);
   mainWindow.webContents.openDevTools();
 }
 
