@@ -1,6 +1,5 @@
 const electron = require("electron");
 const { contextBridge, ipcRenderer } = electron;
-console.log(electron);
 contextBridge.exposeInMainWorld("versions", {
   node: () => process.versions.node,
   chrome: () => process.versions.chrome,

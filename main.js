@@ -2,7 +2,7 @@
 const { app, BrowserWindow } = require("electron");
 
 const path = require("path");
-// require('electron-reload')(path.join(__dirname, "/dist/"), {
+// require('electron-reload')(path.join(__dirname, ""), {
 //   electron: require(`${__dirname}/node_modules/electron`)
 // });
 function createWindow() {
@@ -14,7 +14,8 @@ function createWindow() {
       preload: path.join(__dirname, "preload.js"),
     },
   });
-  // mainWindow.loadFile("dist/index.html");
+
+  // mainWindow.loadFile("./packages/app/dist/index.html");
   mainWindow.loadURL(`${"http://127.0.0.1"}:${2048}/`);
   mainWindow.webContents.openDevTools();
 }

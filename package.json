@@ -8,11 +8,13 @@
     "start": "start cmd /k pnpm vite:dev && pnpm elec:dev",
     "elec:dev": "electron .",
     "vite:dev": "pnpm -r vite:dev",
+    "vite:build": "pnpm -r build:hot",
     "package": "electron-forge package"
   },
   "devDependencies": {
     "electron": "^20.1.3",
-    "electron-builder": "^23.3.3"
+    "electron-builder": "^23.3.3",
+    "electron-reload": "2.0.0-alpha.1"
   },
   "config": {
     "forge": {
