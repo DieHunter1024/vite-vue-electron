@@ -17,11 +17,13 @@ electron：20.1
 
 #### 使用说明
 
-1.  pnpm dev(dev 环境启动项目)
-2.  pnpm vite:dev(单独运行 vite 项目)
-3.  pnpm elec:dev(单独运行 electron 项目)
-4.  pnpm build:hot(热更新预构建 vite 项目)
-5.  pnpm build(构建 vite 项目)
+1.  pnpm start(dev 环境启动项目)
+2.  pnpm build(构建项目)
+3.  pnpm vite:dev(单独运行 vite 项目)
+4.  pnpm elec:dev(单独运行 electron 项目)
+5.  pnpm vite:build:hot(热更新预构建 vite 项目)
+6.  pnpm vite:build(构建 vite 项目)
+7.  pnpm builder(构建 electron 项目)
 
 #### 参与贡献
 
