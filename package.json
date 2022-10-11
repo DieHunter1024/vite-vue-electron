@@ -6,9 +6,11 @@
   "main": "main.js",
   "scripts": {
     "start": "start cmd /k pnpm vite:dev && pnpm elec:dev",
+    "build":"pnpm vite:build && pnpm builder",
     "elec:dev": "electron .",
     "vite:dev": "pnpm -r vite:dev",
-    "vite:build": "pnpm -r build:hot",
+    "vite:build:hot": "pnpm -r build:hot",
+    "vite:build": "pnpm -r build",
     "builder": "electron-builder build"
   },
 

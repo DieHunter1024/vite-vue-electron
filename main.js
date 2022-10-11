@@ -2,9 +2,9 @@
 const { app, BrowserWindow } = require("electron");
 const path = require("path");
 
-require('electron-reload')(path.join(__dirname, ""), {
-  electron: require(`${__dirname}/node_modules/electron`)
-});
+// require('electron-reload')(path.join(__dirname, ""), {
+//   electron: require(`${__dirname}/node_modules/electron`)
+// });
 function createWindow() {
   // 创建浏览器窗口
   const mainWindow = new BrowserWindow({
@@ -15,8 +15,8 @@ function createWindow() {
     },
   });
 
-  // mainWindow.loadFile("./packages/app/dist/index.html");
-  mainWindow.loadURL(`${"http://127.0.0.1"}:${2048}/`);
+  mainWindow.loadFile("./packages/app/dist/index.html");
+  // mainWindow.loadURL(`${"http://127.0.0.1"}:${2048}/`);
   mainWindow.webContents.openDevTools();
 }
 
