@@ -1,3 +1,12 @@
+/*
+ * @Author: Hunter
+ * @Date: 2022-10-18 14:20:01
+ * @LastEditTime: 2022-10-18 18:00:04
+ * @LastEditors: Hunter
+ * @Description: 
+ * @FilePath: \vite-vue-electron\main.js
+ * 可以输入预定的版权声明、个性签名、空行等
+ */
 // 控制应用生命周期和创建原生浏览器窗口的模组
 const { app, BrowserWindow } = require("electron");
 const path = require("path");
@@ -11,6 +20,7 @@ function createWindow() {
     width: 800,
     height: 600,
     webPreferences: {
+      nodeIntegration: true, //允许使用node
       preload: path.join(__dirname, "preload.js"),
     },
   });
