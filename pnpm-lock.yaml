@@ -7,10 +7,12 @@ importers:
       electron: ^20.1.3
       electron-builder: ^23.6.0
       electron-reload: 2.0.0-alpha.1
+      utils-lib-js: ^1.2.1
     devDependencies:
       electron: 20.3.1
       electron-builder: 23.6.0
       electron-reload: r2.cnpmjs.org/electron-reload/2.0.0-alpha.1
+      utils-lib-js: 1.2.1
 
   packages/app:
     specifiers:
@@ -1255,6 +1257,10 @@ packages:
       punycode: 2.1.1
     dev: true
     optional: true
+
+  /utils-lib-js/1.2.1:
+    resolution: {integrity: sha512-hvZuUQ1SjrZE4GkyjX8icnluWpj09SX2N2d+KfgCf23DY1Uo46lHjIYQfO+f+UHp4gMSo7hoDFFKvEtjaQwa6A==}
+    dev: true
 
   /verror/1.10.1:
     resolution: {integrity: sha1-S/Ce7M9FY7EJ7Us9RYOAyXKwzes=}

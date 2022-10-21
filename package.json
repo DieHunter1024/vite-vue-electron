@@ -37,6 +37,7 @@
     }
   },
   "devDependencies": {
+    "utils-lib-js": "^1.2.1",
     "electron": "^20.1.3",
     "electron-builder": "^23.6.0",
     "electron-reload": "2.0.0-alpha.1"
