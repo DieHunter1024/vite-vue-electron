@@ -12,11 +12,14 @@ import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
 // 调用主进程api
-invoke("getAppMetrics").then((a) => {
-    console.log(a)
+invoke("app:getAppMetrics").then((params) => {
+    console.log(params)
 })
-invoke("getGPUFeatureStatus").then((a) => {
-    console.log(a)
+invoke("app:getGPUFeatureStatus").then((params) => {
+    console.log(params)
+})
+invoke("app:name").then((params) => {
+    console.log(params)
 })
 createApp(App).mount('#app')
 

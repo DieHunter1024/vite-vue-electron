@@ -12,7 +12,7 @@ const { initApi } = require("./src/command");
 const { app, BrowserWindow } = electron;
 const path = require("path");
 const { NODE_ENV } = process.env;
-require("electron-reload")("", {
+require("electron-reload")("./", {
   electron: require(`${__dirname}/node_modules/electron`),
 });
 initApi();
@@ -27,7 +27,7 @@ function createWindow() {
     },
   });
   if (NODE_ENV !== "production") {
-    mainWindow.loadURL(`${"http://127.0.0.1"}:${2048}/`);
+    mainWindow.loadURL(`${"http://localhost"}:${2048}/`);
     mainWindow.webContents.openDevTools();
   } else {
     mainWindow.loadFile("./packages/app/dist/index.html");

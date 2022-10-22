@@ -14,7 +14,12 @@ const { eventStr, fixKey } = require("./invokeEvent");
 const removeKey = (exports.removeKey = (str) =>
   str.includes(eventStr) ? str.split(eventStr)[1] : str);
 exports.watch = (type, fn) => {
-  ipcMain.on(type, (event, ...arg) =>
-    event.sender.send(fixKey(type), fn(...arg))
+  ipcMain.on(
+    type,
+    (event, ...arg) =>
+      event.sender.send(
+        fixKey(type),
+        typeof fn === "function" ? fn(...arg) : fn
+      ) //兼容属性或函数
   );
 };
