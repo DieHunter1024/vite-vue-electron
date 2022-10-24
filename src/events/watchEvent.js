@@ -1,10 +1,10 @@
 /*
  * @Author: Hunter
  * @Date: 2022-10-21 13:56:46
- * @LastEditTime: 2022-10-21 16:46:27
+ * @LastEditTime: 2022-10-24 14:03:08
  * @LastEditors: Hunter
  * @Description:
- * @FilePath: \server-monitoring-panel\src\events\watchEvent.js
+ * @FilePath: \vite-vue-electron\src\events\watchEvent.js
  * 可以输入预定的版权声明、个性签名、空行等
  */
 const electron = require("electron");
@@ -13,6 +13,7 @@ const { eventStr, fixKey } = require("./invokeEvent");
 
 const removeKey = (exports.removeKey = (str) =>
   str.includes(eventStr) ? str.split(eventStr)[1] : str);
+// 注册消息，绑定函数
 exports.watch = (type, fn) => {
   ipcMain.on(
     type,
