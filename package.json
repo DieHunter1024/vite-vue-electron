@@ -10,7 +10,7 @@
     "elec:dev": "electron .",
     "vite:dev": "pnpm -r vite:dev",
     "vite:build:hot": "pnpm -r build:hot",
-    "vite:build": "pnpm -r build",
+    "vite:build": "pnpm -r build:vite",
     "clean": "rm -rf ./build",
     "builder": "pnpm run clean && electron-builder build"
   },

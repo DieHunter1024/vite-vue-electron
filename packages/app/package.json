@@ -7,7 +7,7 @@
   "scripts": {
     "vite:dev": "vite",
     "build:hot": "pnpm run clean && vue-tsc --noEmit && vite build --watch",
-    "build": "pnpm run clean && vue-tsc --noEmit && vite build",
+    "build:vite": "pnpm run clean && vue-tsc --noEmit && vite build",
     "clean": "rm -rf ./dist",
     "preview": "vite preview"
   },
